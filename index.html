@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.11/tailwind.min.css"
+      integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Password Strength Background</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="background" id="background"></div>
+    <div class="bg-white rounded-lg p-10 text-center shadow-2xl">
+      <h1 class="text-4xl font-bold mb-4">Image Password Strength</h1>
+      <p class="text-lg text-gray-700 mb-8">
+        Change the password to see the effect
+      </p>
+      <div class="my-4 text-left">
+        <label for="email" class="text-gray-900 font-medium">Email:</label>
+        <input
+          type="text"
+          class="border block w-full p-3 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          id="email"
+          placeholder="Enter Email"
+        />
+      </div>
+
+      <div class="my-4 text-left">
+        <label for="password" class="text-gray-900 font-medium"
+          >Password:</label
+        >
+        <input
+          type="password"
+          class="border block w-full p-3 mt-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          id="password"
+          placeholder="Enter Password"
+        />
+        <div class="strength-bar mt-2">
+          <div id="strength-indicator"></div>
+        </div>
+      </div>
+
+      <button
+        class="bg-indigo-600 hover:bg-indigo-700 text-white py-3 mt-6 inline-block w-full rounded-lg shadow-md transform transition-transform hover:scale-105"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
